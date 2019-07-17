@@ -14,6 +14,9 @@
 		D910DB3E22DE2F9B0016EE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D910DB3C22DE2F9B0016EE30 /* LaunchScreen.storyboard */; };
 		D910DB4922DE2F9B0016EE30 /* CompositingFilters_Swift5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910DB4822DE2F9B0016EE30 /* CompositingFilters_Swift5Tests.swift */; };
 		D910DB5422DE2F9B0016EE30 /* CompositingFilters_Swift5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910DB5322DE2F9B0016EE30 /* CompositingFilters_Swift5UITests.swift */; };
+		D910DB6222DE30DF0016EE30 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910DB6122DE30DF0016EE30 /* BackgroundView.swift */; };
+		D910DBD822DE3EF70016EE30 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910DBD722DE3EF70016EE30 /* VideoView.swift */; };
+		D910DBDA22DE457A0016EE30 /* 7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov in Resources */ = {isa = PBXBuildFile; fileRef = D910DBD922DE457A0016EE30 /* 7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D910DB4F22DE2F9B0016EE30 /* CompositingFilters-Swift5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CompositingFilters-Swift5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D910DB5322DE2F9B0016EE30 /* CompositingFilters_Swift5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositingFilters_Swift5UITests.swift; sourceTree = "<group>"; };
 		D910DB5522DE2F9B0016EE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D910DB6122DE30DF0016EE30 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		D910DBD722DE3EF70016EE30 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		D910DBD922DE457A0016EE30 /* 7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov"; path = "CompositingFilters-Swift5/Assets.xcassets/demo_video.mov.dataset/7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		D910DB2722DE2F990016EE30 = {
 			isa = PBXGroup;
 			children = (
+				D910DBD922DE457A0016EE30 /* 7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov */,
 				D910DB3222DE2F990016EE30 /* CompositingFilters-Swift5 */,
 				D910DB4722DE2F9B0016EE30 /* CompositingFilters-Swift5Tests */,
 				D910DB5222DE2F9B0016EE30 /* CompositingFilters-Swift5UITests */,
@@ -99,6 +106,8 @@
 			children = (
 				D910DB3322DE2F990016EE30 /* AppDelegate.swift */,
 				D910DB3522DE2F990016EE30 /* ViewController.swift */,
+				D910DB6122DE30DF0016EE30 /* BackgroundView.swift */,
+				D910DBD722DE3EF70016EE30 /* VideoView.swift */,
 				D910DB3722DE2F990016EE30 /* Main.storyboard */,
 				D910DB3A22DE2F9B0016EE30 /* Assets.xcassets */,
 				D910DB3C22DE2F9B0016EE30 /* LaunchScreen.storyboard */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D910DBDA22DE457A0016EE30 /* 7B00BF88-F57B-4E65-B1C6-94A982AC7FD8-0.mov in Resources */,
 				D910DB3E22DE2F9B0016EE30 /* LaunchScreen.storyboard in Resources */,
 				D910DB3B22DE2F9B0016EE30 /* Assets.xcassets in Resources */,
 				D910DB3922DE2F990016EE30 /* Main.storyboard in Resources */,
@@ -256,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D910DBD822DE3EF70016EE30 /* VideoView.swift in Sources */,
 				D910DB3622DE2F990016EE30 /* ViewController.swift in Sources */,
 				D910DB3422DE2F990016EE30 /* AppDelegate.swift in Sources */,
+				D910DB6222DE30DF0016EE30 /* BackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +382,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -424,6 +437,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -433,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62L3F89654;
 				INFOPLIST_FILE = "CompositingFilters-Swift5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62L3F89654;
 				INFOPLIST_FILE = "CompositingFilters-Swift5/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
